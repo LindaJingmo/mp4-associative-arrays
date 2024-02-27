@@ -206,7 +206,7 @@ public class AssociativeArray<K, V> {
   /**
    * Expand the underlying array.
    */
-  public void expand() {
+  void expand() {
     this.pairs = java.util.Arrays.copyOf(this.pairs, this.pairs.length * 2);
   } // expand()
 
@@ -214,7 +214,7 @@ public class AssociativeArray<K, V> {
    * Find the index of the first entry in `pairs` that contains key.
    * If no such entry is found, throws an exception.
    */
-  public int find(K key) throws KeyNotFoundException {
+  int find(K key) throws KeyNotFoundException {
     throw new KeyNotFoundException();   // STUB
   } // find(K)
 

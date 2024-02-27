@@ -23,7 +23,8 @@ public class AssociativeArrayExperiments {
    * Run the experiments.
    * @throws NullKeyException 
    */
-  public static void main(String[] args) throws NullKeyException {
+
+  public static void main(String[] args) throws Exception {
     PrintWriter pen = new PrintWriter(System.out, true);
 
     divider(pen);
@@ -42,7 +43,8 @@ public class AssociativeArrayExperiments {
    * and values.
    * @throws NullKeyException 
    */
-  public static void expreimentStringsToStrings(PrintWriter pen) throws NullKeyException {
+
+  public static void expreimentStringsToStrings(PrintWriter pen) throws Exception {
     AssociativeArray<String,String> s2s = 
       new ReportingAssociativeArray<String,String>("s2s", pen);
     s2s.size();
@@ -68,7 +70,7 @@ public class AssociativeArrayExperiments {
    * keys and values.
    * @throws NullKeyException 
    */
-  public static void experimentBigIntToBigInt(PrintWriter pen) throws NullKeyException {
+  public static void experimentBigIntToBigInt(PrintWriter pen) throws Exception {
     AssociativeArray<BigInteger,BigInteger> b2b =
       new ReportingAssociativeArray<BigInteger,BigInteger>("b2b", pen);
 
